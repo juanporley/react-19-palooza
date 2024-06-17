@@ -4,6 +4,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <title> React 19 Examples </title>
+      <meta name="description" content="React 19 Examples" />
+      <meta name="keywords" content="react, react19, examples" />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
