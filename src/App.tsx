@@ -1,5 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
+import { Optimistic } from './Examples/Optimistic';
+import { Forms } from './Examples/Forms';
+import { Use } from './Examples/Use';
+import { ServerComp } from './Examples/ServerComp';
 
 function App() {
   return (
@@ -8,19 +11,16 @@ function App() {
       <meta name="description" content="React 19 Examples" />
       <meta name="keywords" content="react, react19, examples" />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        React 19 Examples
       </header>
+      <main className="App-content">
+      <ServerComp />
+        <Optimistic />
+        <Forms />
+        <Use loadContext={false} />
+        <Use loadContext /> 
+        
+      </main>
     </div>
   );
 }
